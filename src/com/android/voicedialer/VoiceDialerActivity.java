@@ -351,7 +351,7 @@ public class VoiceDialerActivity extends Activity {
             mBluetoothVoiceVolume = mAudioManager.getStreamVolume(
                     AudioManager.STREAM_BLUETOOTH_SCO);
             int maxVolume = mAudioManager.getStreamMaxVolume(AudioManager.STREAM_BLUETOOTH_SCO);
-            int volume = maxVolume - ((18 / (50/maxVolume)) + 1);
+            int volume = maxVolume - ((5 / (75/maxVolume)) + 1);
             if (mBluetoothVoiceVolume > volume) {
                 mAudioManager.setStreamVolume(AudioManager.STREAM_BLUETOOTH_SCO, volume, 0);
             }
